@@ -2,7 +2,7 @@
 
 Полезные ссылки:
 
-- [Ссылка 1](https://www.example1.com](https://www.youtube.com/watch?v=4BibQ69MD8c))
+- (https://www.example1.com](https://www.youtube.com/watch?v=4BibQ69MD8c)
 ---
 
 # Тема 2
