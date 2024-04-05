@@ -10,36 +10,54 @@
 В нашем случае, все ок, потому что у нас поля в Person readonly, но в других случаях следует использовать:
 * Использование конструктора копирования:
 Вы можете добавить конструктор копирования в класс Person, который будет создавать копию объекта Person. Затем вы можете использовать этот конструктор при создании экземпляров Company. Этот подход аналогичен использованию интерфейса ICloneable, но с явным определением метода копирования.
-csharp
-Copy code
-class Person<T>
+```
+class Company<P> where P : ICloneable
+{
+    public P CEO { get; set; }  // президент компании
+    public Company(P ceo)
+    {
+        CEO = (P)ceo.Clone();
+    }
+}
+class Person<T> : ICloneable
 {
     public T Id { get; }
     public string Name { get; }
-
-    public Person(Person<T> person)
+    public Person(T id, string name)
     {
-        Id = person.Id;
-        Name = person.Name;
+        Id = id;
+        Name = name;
     }
 
-    // Other members...
-
+    public object Clone()
+    {
+        return new Person<T>(Id, Name);
+    }
 }
 
-class Company<P>
+namespace testgenerics
 {
-    public P CEO { get; set; }
-
-    public Company(P ceo)
+    class Program
     {
-        CEO = new P(ceo); // Using copy constructor
+        static void Main(string[] args)
+        {
+            Person<int> tom = new Person<int>(546, "Tom");
+            Company<Person<int>> microsoft = new Company<Person<int>>(tom);
+            Console.WriteLine(microsoft.CEO.Id);  // 546
+            Console.WriteLine(microsoft.CEO.Name);  // Tom
+
+            // Изменение одного экземпляра не отразится на другом
+            tom.Name = "Tommy";
+            Console.WriteLine(microsoft.CEO.Name);  // Tom
+        }
     }
 }
+```
+
 * Использование сериализации:
 Вы можете сериализовать и десериализовать объект ceo, чтобы создать его глубокую копию. Это может быть сделано, например, с использованием бинарной сериализации в .NET.
 csharp
-Copy code
+```
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 
@@ -76,10 +94,10 @@ class Company<P>
         }
     }
 }
+```
 * Использование методов клонирования:
 Вместо реализации интерфейса ICloneable вы можете добавить метод клонирования в класс Person, который будет создавать глубокую копию объекта Person. Это позволяет явно контролировать процесс клонирования.
-csharp
-Copy code
+```
 class Person<T>
 {
     public T Id { get; }
@@ -100,6 +118,7 @@ class Company<P>
         CEO = ceo.Clone();
     }
 }
+```
 
 Videos:
 
