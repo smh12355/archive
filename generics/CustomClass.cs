@@ -9,11 +9,23 @@ class Company<P>
 }
 class Person<T>
 {
-    public T Id { get;}
-    public string Name { get;}
+    public T Id { get; }
+    public string Name { get; }
     public Person(T id, string name)
     {
-        Id = id; 
+        Id = id;
         Name = name;
     }
 }
+class Person_new<T, K>
+{
+    public T first_arg { get; set; }
+    public K second_arg { get; set; }
+
+    public Person_new(T a, K b)
+    {
+        first_arg = a;
+        second_arg = b;
+    }
+}
+

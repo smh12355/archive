@@ -119,11 +119,7 @@ class Company<P>
     }
 }
 ```
-
-Videos:
-
-Articles:
-## !    
+##     
 
 Videos:
 
