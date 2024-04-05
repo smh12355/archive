@@ -3,31 +3,25 @@
 
 Video:
 
-- (https://www.youtube.com/watch?v=4BibQ69MD8c)
----
+* (https://www.youtube.com/watch?v=4BibQ69MD8c)
 
 ## How internet work
 
 Articles:
-
 - (https://cs.fyi/guide/how-does-internet-work#introduction-to-the-internet)
 - (https://web.stanford.edu/class/msande91si/www-spr04/readings/week1/InternetWhitepaper.htm)
----
 
-# Тема 3
+## Http protocol
 
-Полезные ссылки:
+Videos:
+* (https://www.youtube.com/watch?v=2JYT5f2isg4)
+* (https://www.youtube.com/watch?v=a-sBfyiXysI
+Articles:
+* (https://metanit.com/sharp/net/2.5.php)
 
-- [Ссылка 1](https://www.example1.com)
+## How browser works
 
----
-
-# Тема 4
-
-Полезные ссылки:
-
-- [Ссылка 1](https://www.example1.com)
-- [Ссылка 2](https://www.example2.com)
-- [Ссылка 3](https://www.example3.com)
-- [Ссылка 4](https://www.example4.com)
+Articles:
+* (https://developer.mozilla.org/ru/docs/Web/Performance/How_browsers_work)
+* (https://web.dev/articles/howbrowserswork?hl=ru)
 
