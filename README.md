@@ -15,7 +15,7 @@ Articles:
 
 Videos:
 * (https://www.youtube.com/watch?v=2JYT5f2isg4)
-* (https://www.youtube.com/watch?v=a-sBfyiXysI
+* (https://www.youtube.com/watch?v=a-sBfyiXysI)
 Articles:
 * (https://metanit.com/sharp/net/2.5.php)
 
