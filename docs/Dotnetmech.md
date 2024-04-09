@@ -141,7 +141,7 @@ X_grid = new double[Npoints];
 ```
 тут происходит обезразмеривание на каждом шаге сетки, то есть сумма обезразмеренных элементов, в итоге получаем:
 <p float="center">
-  <img src="https://github.com/smh12355/archive/imges/f1.png" width="400" >
+  <img src="https://github.com/smh12355/archive/blob/master/imges/f1.PNG" width="400" >
 </p>
 посмотрим на следующий код:
 
@@ -151,7 +151,7 @@ double[] T_Grid = Enumerable.Range(0, Tpoints).Select(x => x * UpperTimeLimit / 
 ```
 тут обезразмеривание происходит в последний момент и получаем уже другой результат:
 <p float="center">
-  <img src="https://github.com/smh12355/archive/imges/f2.png" width="400" >
+  <img src="https://github.com/smh12355/archive/blob/master/imges/f2.PNG" width="400" >
 </p>
 большая разница и меньше кода
 
