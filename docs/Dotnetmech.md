@@ -119,11 +119,42 @@ class Company<P>
     }
 }
 ```
-##     
+## механика плавающей точки     
 
-Videos:
+При создании разностной сетки изначально я использовал следующую конструкцию:
 
-Articles:
+```
+X_grid = new double[Npoints];
+            T_grid = new double[Tpoints];
+            double ForCycle = 0;
+            for (int i = 0; i < Npoints; i++)
+            {
+                X_grid[i] = ForCycle;
+                ForCycle += (L / (Npoints - 1)) / L;
+            }
+            ForCycle = 0;
+            for (int i = 0; i < Tpoints; i++)
+            {
+                T_grid[i] = ForCycle;
+                ForCycle += UpperT / (Tpoints - 1) / T_star;
+            }
+```
+тут происходит обезразмеривание на каждом шаге сетки, то есть сумма обезразмеренных элементов, в итоге получаем:
+<p float="center">
+  <img src="https://github.com/smh12355/archive/imges/f1.png" width="400" >
+</p>
+посмотрим на следующий код:
+
+```
+double[] X_Grid = Enumerable.Range(0, Xpoints).Select(x => x * TrunkLength / (Xpoints - 1.0)).Select(x => x / TrunkLength).ToArray();
+double[] T_Grid = Enumerable.Range(0, Tpoints).Select(x => x * UpperTimeLimit / (Tpoints - 1.0)).Select(x => x / T_Star).ToArray();
+```
+тут обезразмеривание происходит в последний момент и получаем уже другой результат:
+<p float="center">
+  <img src="https://github.com/smh12355/archive/imges/f2.png" width="400" >
+</p>
+большая разница и меньше кода
+
 ## !    
 
 Videos:
