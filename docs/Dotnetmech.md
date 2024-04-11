@@ -167,5 +167,5 @@ Videos:
 Articles:
 
 [//]: # (LINKS)
-[token1]:../generics/CustomClass.cs
-[token2]:../generics/Program.cs
+[token1]:../metanit/generics/CustomClass.cs
+[token2]:../metanit/generics/Program.cs
