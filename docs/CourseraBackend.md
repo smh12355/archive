@@ -138,3 +138,73 @@ media='screen' определяет, для каких типов устройс
  * float:
    * right - обтекание слева
    * left - справа
+  
+## 3-d week bootstrap, react 
+
+* адаптивный дизайн - взависимости от устройства отображается согласно сценари
+  * flexible grids
+    * margins
+    * columns
+    * gutters
+  * fluid images
+    * max-width:100percent = уменьшается в столбце, но никогда не увеличавается(ну тип 100 процентов от родительской)
+  * media queries = условия для телефонов различных и тд
+  * breakpoint
+    * fixed grid = статичная
+    * fluid grid = подстраивается под размер
+    * hybrid grid = fixed + fluid
+* библитека(фрейворк) css bootstrap, для адаптивной верстки
+  * inflix
+    * extrasmall = base(initial)
+    * small = sm
+    * medium = md
+    * large = lg
+    * Extralarge = xl
+    * Extraextralarge = xxl
+    * example: class="col-12 col-lg-6"
+  * modifiers - определяет цвет
+    * primary
+    * secondary
+    * success
+    * info
+    * warning
+    * danger
+    * light
+    * dark
+    * example: class="btn btn-primary"
+  * система сетки в ней 12 столбцов:
+    * container:<div class="container">
+    * rows:<div class="row">
+    * columns:<div id="bio" class="col-12 col-lg-6 text-center">
+* статичный и динамичный контент:
+  * статичный => просто загружается изначально
+  * динамичный => реакция на действия
+    * browser=client
+    * web-server = когда клиент делает динамический реквест вебсервер трогает апп сервер получает респонс кеширует его на всякий случай(для быстрой работы) и отправляет клиенту
+      * кеширование!
+    * app-server = динамический контент
+      * логика
+      * взаимодействие с базой данных
+      * permissions = разрешение или роли(права)
+* SPA = SINGLE PAGE APPLICATION
+  * bundling - сразу все
+    * html + JSON 
+  * LAZY-loading - подгрузка
+    * templates = views
+    * JSON
+* React = desktop and React native = mobile
+  * Основа
+    * UI
+    * Navigation
+    * requests
+  * создавай компоненты и используй их повторно(насчет создавай неуверен)
+  * реакт не MVC - фреймворк
+  * реакт не использует шаблоны
+  * используется языки программирования для рендеринга
+    * js - круто
+    * упрощение расширения и поддержки
+    * нет ручной конкатинации = меньше уязвимостей
+  * VIRTUAL DOM = который react сам создает на основе DOM HTML и обновляет
+    * update DOM происходит частично, c помощью реакта который сравниванет virtual DOM и real DOM = reconsilation = вроде обновление даже происходит частично, а не всего DO
+  * обновление распледеленное по времени для лучшей загрузки и работы: React Fiber
+  *  react - это библиотека!
