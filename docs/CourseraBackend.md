@@ -208,3 +208,9 @@ media='screen' определяет, для каких типов устройс
     * update DOM происходит частично, c помощью реакта который сравниванет virtual DOM и real DOM = reconsilation = вроде обновление даже происходит частично, а не всего DO
   * обновление распледеленное по времени для лучшей загрузки и работы: React Fiber
   *  react - это библиотека!
+* [(ping)][token1] - bootstrap
+* [(ping)][token2] - bootstrap
+
+[//]: # (LINKS)
+[token1]:../coursera\ introduction\ in\ backend\ development/index.html
+[token2]:../coursera\ introduction\ in\ backend\ development/index1.html
