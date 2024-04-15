@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\krik6\\OneDrive\\Рабочий стол\\archive\\generics\\generics.csproj": {}
+    "C:\\Users\\krik6\\OneDrive\\Рабочий стол\\archive\\metanit\\generics\\generics.csproj": {}
   },
   "projects": {
-    "C:\\Users\\krik6\\OneDrive\\Рабочий стол\\archive\\generics\\generics.csproj": {
+    "C:\\Users\\krik6\\OneDrive\\Рабочий стол\\archive\\metanit\\generics\\generics.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\krik6\\OneDrive\\Рабочий стол\\archive\\generics\\generics.csproj",
+        "projectUniqueName": "C:\\Users\\krik6\\OneDrive\\Рабочий стол\\archive\\metanit\\generics\\generics.csproj",
         "projectName": "generics",
-        "projectPath": "C:\\Users\\krik6\\OneDrive\\Рабочий стол\\archive\\generics\\generics.csproj",
+        "projectPath": "C:\\Users\\krik6\\OneDrive\\Рабочий стол\\archive\\metanit\\generics\\generics.csproj",
         "packagesPath": "C:\\Users\\krik6\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\krik6\\OneDrive\\Рабочий стол\\archive\\generics\\obj\\",
+        "outputPath": "C:\\Users\\krik6\\OneDrive\\Рабочий стол\\archive\\metanit\\generics\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\krik6\\AppData\\Roaming\\NuGet\\NuGet.Config",
