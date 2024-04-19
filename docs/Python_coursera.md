@@ -53,10 +53,10 @@
         -   flush - форсит немедленно записать в файл
 6.  **Operators**
     -   Math
-        -   +
-        -   -
-        -   =
-        -   *
+        -   "+"
+        -   "-"
+        -   "="
+        -   "*"
     -   Logical
         -   and
         -   or
@@ -86,5 +86,5 @@
         -   case 2:
         -   case _: = default!!
     -   alg complexity
-        -   rule w n and t => n > => t >
+        -   rule with n-alghorithm inpute size data and time program execute => n > => t >
 
