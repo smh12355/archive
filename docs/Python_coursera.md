@@ -51,3 +51,40 @@
         -   end = что будет добавлено в конце строки по умолчанию \n
         -   file = куда будут выводиться данные
         -   flush - форсит немедленно записать в файл
+6.  **Operators**
+    -   Math
+        -   +
+        -   -
+        -   =
+        -   *
+    -   Logical
+        -   and
+        -   or
+        -   not
+    -   Condition
+        -   if
+        -   else
+        -   elif
+    -   Loops
+        -   for
+            -   for i in range()
+            -   for i,j in enumerate()
+        -   exit operators
+            -   break
+        -   continue operators
+            -   continue
+        -   skip operators
+            -   pass
+        -   while
+        -   Loops special words
+            -   enumerate()
+            -   range()
+            -   pass
+            -   break
+            -   continue
+    -   mathch-case
+        -   case 2:
+        -   case _: = default!!
+    -   alg complexity
+        -   rule w n and t => n > => t >
+
