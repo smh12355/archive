@@ -92,7 +92,7 @@
     -   def asd:
     return2
 2.  **Scope**
-        -   for protect variable with context
+    -   for protect variable with context
         -   specification
             -   local
                 -   inside function
