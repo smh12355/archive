@@ -178,3 +178,84 @@
         -   try:
         -   except:
             -   except Exception as e:
+## 3-st week
+1.  Code structure
+    -   procedure
+        -   easy to learn
+        -   Reusable
+        -   easy to do
+    -   functional
+    -   oop
+    -   principe = dont repeat urself = DRY
+2.  Algorithm
+    -   Decomposition
+        -   рекусрия
+        -   разделяй и властвуй
+        -   динамическое программирование
+        -   жадный алгоритм
+    -   Критерии
+        -   время выполнения
+        -   память
+    -   Сложность
+        -   O(1) - доступ по индексу в листе
+        -   O(n) - поиск в несартированном списке
+        -   0(n^2) - сортировка пузырьком
+        -   O(log n) - бинарный поиск в отсортированном списке
+        -   O(n log n) - лучший случай быстрой сортировки, сортировки слиянием и пирамиадльной сортировке
+        -   O(2^n) - экспоненциальная сложность 
+        -   O(n!) - факториальная сложность
+    -   Анализ алгоритма
+        -   входные данные
+        -   обратить внимание на циклы
+        -   Количество операций внутри цикла
+        -   Вложенные циклы = умножение
+        -   Сосредоточиться над доминирующей сложностью
+        -   упрощай, удаляй коснтанты
+3.  Функциональное программирование
+    -   традиционное
+        -   использует глобальные переменные(контекст)
+        -   изменяет глобальные переменные
+        -   изменяет аргументы
+        -   использует локальные переменные
+    -   чистое(pure)
+        -   использует локальные переменные
+        -   вывод зависит от входных данных
+    -   DOUNT TOUCH DATA OUTSIDE
+    -   INDEPENDENT
+    -   PURE
+        -   known outcome
+        -   consistant
+        -   cache
+        -   multi-thread support
+    -   recursion
+        -   function call urself
+4. Map and filter
+    -   MAP(FUNC,ARG)
+```
+words = ["apple", "banana", "cherry"]
+word_lengths = list(map(len, words))
+```
+        -   возвращает обьект Map => если не удволетворяет услловию возвращает None
+    -   Filter(func,arg)
+```
+words = ["apple", "banana", "cherry"]
+word_lengths = list(filter(len, words))
+```
+        -   удаляет элементы которые не подходят
+5. Comprehensions
+    -   List
+        -   [x + 1 for x in data]
+        -   [x + 1 for x in data if x == 0] 
+    -   Dict
+        -   {x:x*2 for x in data}
+        -   {a1:a2 for (a1,a2) in zip(a,b)}
+    -   set
+        -   {x for x in range (0,20) not in [12,16,13]}
+6. List Generator
+    -   gener
+```
+data = [1, 2, 3, 4, 5]
+gener = (x for x in data)
+for i in gener:
+    print(i)
+```
