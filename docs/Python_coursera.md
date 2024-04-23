@@ -231,17 +231,17 @@
         -   function call urself
 4. Map and filter
     -   MAP(FUNC,ARG)
+        -   возвращает обьект Map => если не удволетворяет услловию возвращает None
+    -   Filter(func,arg)
+        -   удаляет элементы которые не подходят
 ```
 words = ["apple", "banana", "cherry"]
 word_lengths = list(map(len, words))
 ```
-        -   возвращает обьект Map => если не удволетворяет услловию возвращает None
-    -   Filter(func,arg)
 ```
 words = ["apple", "banana", "cherry"]
 word_lengths = list(filter(len, words))
 ```
-        -   удаляет элементы которые не подходят
 5. Comprehensions
     -   List
         -   [x + 1 for x in data]
