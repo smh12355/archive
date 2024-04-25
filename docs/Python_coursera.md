@@ -179,7 +179,7 @@
         -   except:
             -   except Exception as e:
 ## 3-st week
-1.  Code structure
+1.  **Code structure**
     -   procedure
         -   easy to learn
         -   Reusable
@@ -187,7 +187,7 @@
     -   functional
     -   oop
     -   principe = dont repeat urself = DRY
-2.  Algorithm
+2.  **Algorithm**
     -   Decomposition
         -   рекусрия
         -   разделяй и властвуй
@@ -211,7 +211,7 @@
         -   Вложенные циклы = умножение
         -   Сосредоточиться над доминирующей сложностью
         -   упрощай, удаляй коснтанты
-3.  Функциональное программирование
+3.  **Функциональное программирование**
     -   традиционное
         -   использует глобальные переменные(контекст)
         -   изменяет глобальные переменные
@@ -229,7 +229,7 @@
         -   multi-thread support
     -   recursion
         -   function call urself
-4. Map and filter
+4. **Map and filter**
     -   MAP(FUNC,ARG)
         -   возвращает обьект Map => если не удволетворяет услловию возвращает None
     -   Filter(func,arg)
@@ -242,7 +242,7 @@ word_lengths = list(map(len, words))
 words = ["apple", "banana", "cherry"]
 word_lengths = list(filter(len, words))
 ```
-5. Comprehensions
+5. **Comprehensions**
     -   List
         -   [x + 1 for x in data]
         -   [x + 1 for x in data if x == 0] 
@@ -251,11 +251,78 @@ word_lengths = list(filter(len, words))
         -   {a1:a2 for (a1,a2) in zip(a,b)}
     -   set
         -   {x for x in range (0,20) not in [12,16,13]}
-6. List Generator
-    -   gener
+6. **List Generator**
+    -   generators - тут на самом деле очень кратко описано там еще yield есть, это сложная тема
 ```
 data = [1, 2, 3, 4, 5]
 gener = (x for x in data)
 for i in gener:
     print(i)
 ```
+7.  **OOP Python**
+    -   вобщем парадигмы программирования
+        -   ООП
+        -   Императивное выполнение программ
+            -   Процедурное
+        -   Функциональное = отличие от процедурного - то что функции pure
+        -   Декларативное
+        -   Логическое
+        -   flow-driven - потокове программирование - не обязательно параллельное выполнение и асинхронное = организация внутренней структуры( не распространена)
+        -   event-driven - реакция на дейсвие = СОП по русски = dotnet с помощью event реализует подписочную реализацию евентов (publisher/subscriber)
+    -   Python
+        -   OOP
+        -   functional
+        -   procedure
+    -   модульность ООП
+        -   легок для понимания
+        -   reusable
+        -   Abstraction
+        -   Move between projects
+    -   key components
+        -   class
+            -   Attributes = variables
+            -   Behavior = functions(methods)
+            -   class => object (all in python is a object)
+        -   object
+            -   instant of class
+        -   methods = behavior of class
+8.  **OOP Conceptions**
+    -   наследование
+        -   parent - child модель => в питоне еще допом идет MRO
+    -   инкапсуляция
+        -   методы и поля в одном блоке данных => область видимости
+        -   сокрытие данных с помощью модификаторов доступа
+            -   в питоне _ = протектед
+            -   __ = приват
+    -   полиморфизм
+        -   многообразие => например функция ведет себя по-разному взависимости от типа данных которые подаются ей на вход  
+    -   абстракция
+        -   средство сокрытия, как важной так и ненужной информации
+        -   реализуется с помощью абстррактных класов и методов
+    -   Attributes = vars
+    -   Behavior = methods
+    -   Object = main thing in Python
+9.  **Class in python**
+    -   pass = заглушка
+    -   _ = протектед
+    -   __ = приват
+    -   доступ к приватным полям
+```
+class MyClass:
+    __hidden_variable = 5
+
+    def get_hidden_variable(self):
+        return self.__hidden_variable
+
+# Пример использования
+obj = MyClass()
+print(obj.get_hidden_variable())  # Работает, потому что мы используем открытый метод для доступа к скрытому атрибуту
+
+# Попытка прямого доступа к скрытой переменной вызовет ошибку
+# print(obj.__hidden_variable)  # Ошибка: 'MyClass' object has no attribute '__hidden_variable'
+
+# Однако мы можем получить доступ к этой переменной, используя искаженное имя
+print(obj._MyClass__hidden_variable)  # Работает, так как мы испол
+```
+    -   заместо self - может быть любое другое слово
+    -   очень важно = КЛАСС ДОЛЖЕН БЫТЬ ОБЬЯВЛЕН ДО ИНИЦИЛИЗАЦИИ ЭКЗЕМПЛЯРОВ
