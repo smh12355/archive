@@ -114,7 +114,7 @@
         statement_block_2  
     fi
     ```
-comman line args = 2
+    comman line args = 2
     ```
     if [[ $# == 2 ]]
     then
