@@ -108,29 +108,29 @@
 
     ```
     if [ condition ]
-then
-    statement_block_1  
-else
-    statement_block_2  
-fi
+    then
+        statement_block_1  
+    else
+        statement_block_2  
+    fi
     ```
 comman line args = 2
     ```
-if [[ $# == 2 ]]
-then
-    echo "number of arguments is equal to 2"
-else
-    echo "number of arguments is not equal to 2"
-fi
+    if [[ $# == 2 ]]
+    then
+        echo "number of arguments is equal to 2"
+    else
+        echo "number of arguments is not equal to 2"
+    fi
     ```
 
     ```
-if [ condition1 ] && [ condition2 ]
-then
-    echo "conditions 1 and 2 are both true"
-else
-    echo "one or both conditions are false"
-fi
+    if [ condition1 ] && [ condition2 ]
+    then
+        echo "conditions 1 and 2 are both true"
+    else
+        echo "one or both conditions are false"
+    fi
     ```
     -   math
         -   echo $((3+2))
@@ -139,16 +139,16 @@ fi
     -   loops
 
     ```
-for item in ${my_array[@]}; do
-    echo $item
-done
+    for item in ${my_array[@]}; do
+        echo $item
+    done
     ```
 
     ```
-N=6
-for (( i=0; i<=$N; i++ )) ; do
-    echo $i
-done
+    N=6
+    for (( i=0; i<=$N; i++ )) ; do
+        echo $i
+    done
     ```
 4.  **finall project**
     
