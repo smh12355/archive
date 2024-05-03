@@ -5,11 +5,10 @@
 
 Here I share my thoughts about the courses taken and materials studied
 ***
-***
-***
 ## Backend development [(view)][token1]
 ## Dotnet C# mechanics [(view)][token2]
-## Coursera backend
+## Hands-on Introduction to Linux Commands and Shell Scripting [(view)][token9]
+## Coursera backend META
 * ## Introduction in backend [(view)][token3]
 * ## Python [(view)][token6]
 ## Golang [(view)][token4]
@@ -27,4 +26,5 @@ Here I share my thoughts about the courses taken and materials studied
 [token6]:docs/Python_coursera.md
 [token7]:docs/tinkstage.md
 [token8]:docs/tinkstagealgo.md
+[token9]:docs/shellscripting.md
 
