@@ -13,7 +13,8 @@ Here I share my thoughts about the courses taken and materials studied
 * ## Python [(view)][token6]
 ## Golang [(view)][token4]
 ## CyberSec [(view)][token5]
-## Tinkoff stage 
+## Intro in git and github Google[(view)][token10]
+## Tinkoff stage April
 * ## .NET TEST [(view)][token7]
 * ## ALGO PRACS [(view)][token8]
 
@@ -27,4 +28,5 @@ Here I share my thoughts about the courses taken and materials studied
 [token7]:docs/tinkstage.md
 [token8]:docs/tinkstagealgo.md
 [token9]:docs/shellscripting.md
+[token10]:docs/gitgoogle.md
 
