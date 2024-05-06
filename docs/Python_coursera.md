@@ -364,3 +364,98 @@ print(obj._MyClass__hidden_variable)  # Работает, так как мы и�
     -   методы mro
         -   c.mro()
         -   print(help(c))
+## 4-st week
+1. **modules in python**
+    -   modules - что-то наподобие неймспейсов
+    -   scope - область видимости другими словами
+        -   local
+        -   enclosed
+        -   global
+        -   built-in
+        -   LEGB - WORK ON rule
+    -   special words
+        -   global
+        -   non-local
+    -   import constructions
+        -   from math import smth
+        -   import math as smth
+        -   from math import smth as smth1
+    -   import importlib importlib.reaload(module) = reload module
+    -   если в модуле добавляется __path__ => из модуля становится пакетом(packet)
+    -   module
+        -   scope
+        -   reuse
+        -   simplicity
+    -   module search engine(algo)
+        -   current dir path
+        -   built in module directory
+        -   python env path
+        -   installatin depend default directory
+        -   sys.path.insert(path) = после этого можно будет использовать нормально модуль
+2. **popular packages**
+    -   built-in
+        -   os
+        -   sys
+        -   csv
+        -   ...
+    -   Data science
+        -   numpy
+        -   scipy
+        -   pandas
+        -   opencv
+        -   matplotlib
+    -   AI and ML
+        -   Tensor flow
+        -   Pytotch
+        -   keras
+        -   scipy
+        -   scykit-learn
+        -   Theano
+    -   Web
+        -   Flask
+        -   Django
+        -   Cherrypie
+        -   pyramid
+        -   beutiful soup
+        -   selenium
+    -   Web Frameworks
+        -   Full-stack
+            -   Django
+            -   Web2py
+            -   Pyramid
+        -   micro
+            -   flask
+            -   bottle
+            -   Dash
+            -   cherrypie
+        -   async
+            -   Growler
+            -   Atohttp
+            -   sanic
+3. **Testing**
+    -   Tests takes
+        -   Reuse
+        -   Traceability
+        -   Efficency
+    -   Cicle
+        -   Plan
+        -   Prepare
+        -   Execute
+        -   Report
+    -   Tests
+        -   unit
+            -   when write code
+        -   integration
+            -   data base web data transfer and cast in back
+        -   system
+            -   business requerments metrics
+        -   Acceptence
+            -   A-B testing
+            -   regression testing
+    -   other test types <= просто типы тестов внутри дерева из 4-x верхних
+        -   functional
+            -   business req
+        -   nonfunctional
+            -   общая производительность
+        -   maintence
+            -   расшерение среды или исправление legacy кода
