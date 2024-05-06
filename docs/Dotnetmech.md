@@ -155,11 +155,14 @@ double[] T_Grid = Enumerable.Range(0, Tpoints).Select(x => x * UpperTimeLimit / 
 </p>
 большая разница и меньше кода
 
-## !    
-
-Videos:
-
-Articles:
+## отличие debug от release версии в visual studio
+    -   debug
+        -   не выполняются некоторые оптимизации
+        -   меделенее чем release
+        -   доп сведения о сборке и отладочные файлы
+    -   release
+        -   окончательные оптимизации
+        -   отладочные и метафайлы не вносятся
 ## !    
 
 Videos:
