@@ -1,6 +1,6 @@
 # Python in meta course(Coursera)
 > [!NOTE]
-> In progress
+> Done
 ## 1-st week
 1.  **Variables**
     -   Style
@@ -459,3 +459,43 @@ print(obj._MyClass__hidden_variable)  # Работает, так как мы и�
             -   общая производительность
         -   maintence
             -   расшерение среды или исправление legacy кода
+    -   Auto testing
+        -   unit
+        -   regression
+        -   integration
+    -   testing steps:
+        -   prepare testing environment
+        -   run the test scripts
+        -   analyze results
+    -   popular libs
+        -   unittest lib
+            -   automatization
+            -   independing testing modules
+            -   aggregation
+        -   pytest
+            -   functional
+                -   unit
+                -   integration
+                -   in to end(сквозное)
+        -   pyunits
+    -   other popular
+        -   pytest
+        -   robot
+            -   RPA - ROBOTIC PROCESS AUTOMATION
+            -   TDD - Test Driven Development
+        -   selenium
+    ```
+    import pytest
+    import customlib
+    def test_lol:
+        assert customlib.lol(x,y,z) == 0
+
+    console: python -m test.py::test_add
+    ```
+    -   TDD - разработка через тестирование
+        -   test
+        -   code
+        -   run tests
+        -   eval error
+        -   rerun process
+    -   red-green refactoring = то что выше(хотя не уверен)
