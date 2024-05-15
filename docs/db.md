@@ -264,3 +264,66 @@ ROLLBACK
         -   primary - первичный
         -   alternative - один из кандидатов
         -   foreign - внешний ключ
+## 2-st week
+-   типы данных в различных бд
+    -   NUMERIC
+        -   integer
+        -   decimal
+        -   tinyint
+        -   (positive negative) => больше значений
+    -   STRING
+    -   DATETIME
+    -   СОЗДАНИЕ ТАБЛИЦ И БДШЕК
+        -   CREATE DATABASE name;
+        -   USE name;
+        -   CREATE TABLE asd(... type, ... type, ... type)ж
+    -  STRING
+        -   numeric
+        -   text
+        -   types
+            -   CHAR(10) => всегда занимает в памяти константный размер в 10 симвлов независимо от введенных элементов;
+                -   быстрее при сортировке!! чем варчар
+            -   varchar(10) => не фиксированно, занимает столько сколько ввел\
+            -   tinytext = 255 
+            -   text = 65000
+            -   mediumtext = 16.7 миллионнов
+            -   longtext = 4 gb
+            -   char = char(1)
+            -   deciamal = decimal(10,0)
+    -   ограничения
+        -   foreign key
+        -   columns <= datatypes
+        -   NOT NULL
+            -   поля всегда заполнены => отменяет операцию если пусто
+            -   CREATE TABLE oleg1(id int NOT NULL, name VARCHAR(10), city VARCHAR(10) DEFAULT "MOSCOW");
+        -   DEFAULT
+            -   CREATE TABLE oleg1(id int NOT NULL, name VARCHAR(10), city VARCHAR(10) DEFAULT "MOSCOW");
+    -   ALTER - изменения
+        -   ADD
+            -   ALTER TABLE oleg1 ADD (idnew INT);
+        -   DROP
+            -   ALTER TABLE oleg1 DROP id;
+            -   ALTER TABLE oleg1 DROP COLUMN idnew;
+        -   MODIFY
+            -   ALTER TABLE oleg1 MODIFY COLUMN name varchar(20);
+            -   ALTER TABLE oleg1 MODIFY name varchar(20);
+            -   ALTER TABLE oleg1 MODIFY COLUMN name VARCHAR(40), MODIFY COLUMN city VARCHAR(40);
+    -   INSERT INTO
+        -    INSERT INTO oleg1 (name,city) VALUES ("oleg","moscow"), ("misha","ufa");
+        -   если два раза написать верхний запрос то вставится просто два раза
+    -   SELECT
+        -   SELECT * FROM oleg1; = все записи
+        -   SELECT name,city FROM oleg1;
+    -   INSERT INTO SELECT
+        -   INSERT INTO oleg1(name,city) SELECT name,city FROM OLEG2;
+    -   UPDATE
+        -   UPDATE oleg1 SET name="olya",city="kiev" WHERE name="oleg" AND city="moscow"; ПРИМЕНЯЕТСЯ КО ВСЕМ СТРОКАМ С СОВПАДЕНИЕМ(ТЮПЛАМ)
+    -   DELETE
+        -   DELETE FROM oleg1 WHERE name="olya"; применяется ко всем с совпадением
+        -   DELETE FROM oleg1; - удалить все записи
+    -   DESCRIBE - DESCRIBE oleg1; - инфа о таблице
+    -   TRUNCATE
+        -   TRUNCATE TABLE oleg1; - делитает все рекорды с таблицы , нельзя отменить в отличие от DELETE, ТАК КАК ЭТО DDL, а DML можно в рамках транзакции
+    -   DROP TABLE - УДАЛИТЬ ТАБЛИЦУ
+
+        
