@@ -13,6 +13,8 @@ Here I share my thoughts about the courses taken and materials studied
 * ## Python [(view)][token6]
 * ## Intoduction in Database [(view)][token11]
 ## Golang [(view)][token4]
+## Yandex SQL start course [(view)][token12]
+## WSL mysql testing [(view)][token1]
 ## CyberSec [(view)][token5]
 ## Intro in git and github Google[(view)][token10]
 ## Tinkoff stage April
@@ -31,4 +33,6 @@ Here I share my thoughts about the courses taken and materials studied
 [token9]:docs/shellscripting.md
 [token10]:docs/gitgoogle.md
 [token11]:docs/db.md
+[token12]:docs/yandexdb.md
+[token13]:docs/MYSQLWSL.md
 
