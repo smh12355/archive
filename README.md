@@ -14,7 +14,7 @@ Here I share my thoughts about the courses taken and materials studied
 * ## Intoduction in Database [(view)][token11]
 ## Golang [(view)][token4]
 ## Yandex SQL start course [(view)][token12]
-## WSL mysql testing [(view)][token1]
+## WSL mysql testing [(view)][token13]
 ## CyberSec [(view)][token5]
 ## Intro in git and github Google[(view)][token10]
 ## Tinkoff stage April
